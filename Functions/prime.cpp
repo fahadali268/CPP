@@ -6,7 +6,7 @@ bool isPrime(int n){
         return false;
     }
     for(int i=2;i<=sqrt(n);i++){
-        if(n%2==0){
+        if(n%i==0){
         return false;
     }
     }
