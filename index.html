@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="brand">
+            <h1>Mohd Fahad Ali</h1>
+            <p>Aspiring Full Stack Developer</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <div class="about-box">
+            <img
+                src="https://images.unsplash.com/photo-1740252117013-4fb21771e7ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FydG9vbiUyMHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Profile Photo"
+                class="profile-pic"
+            >
+
+            <p>
+                I am a fourth year B.Tech student learning full stack web development.
+                I enjoy building small projects and I am currently exploring React
+                and Node.js.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills &amp; Ratings</h2>
+
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Rating (out of 5)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML &amp; CSS</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>React JS</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Node &amp; Express</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>MongoDB</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- Project Gallery -->
+    <section id="gallery" class="section">
+        <h2>Project Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <!-- Project 1 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600"
+                    alt="Library Management System"
+                >
+                <p>Library Management System</p>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600"
+                    alt="Weather App"
+                >
+                <p>Weather App</p>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
+                    alt="Result Portal"
+                >
+                <p>Result Portal</p>
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=600"
+                    alt="Chat Application"
+                >
+                <p>Chat Application</p>
+            </div>
+
+
+            <!-- Project 5 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600"
+                    alt="Expense Tracker"
+                >
+                <p>Expense Tracker</p>
+            </div>
+
+
+            <!-- Project 6 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                    alt="Quiz App"
+                >
+                <p>Quiz App</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form" action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+            >
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+            >
+
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Type your message"
+            ></textarea>
+
+            <div class="btn-row">
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Clear">
+            </div>
+
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Fahad. Made for FSWD</p>
+    </footer>
+
+</body>
+</html>
