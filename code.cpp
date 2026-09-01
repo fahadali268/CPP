@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
+
 int main(){
-    int a = 20;
+    int a = 10;
     int *ptr = &a;
+
     cout<<ptr<<endl;
     ptr++;
     cout<<ptr<<endl;

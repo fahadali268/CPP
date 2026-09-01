@@ -1,0 +1,213 @@
+/* ---------- Reset-ish basics ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box model: border & padding inside width */
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #22333b;
+    line-height: 1.5;
+}
+
+
+/* ---------- Header - Flexbox ---------- */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #023047;
+    color: #fff;
+    padding: 20px 40px; /* box model: padding around content */
+}
+
+.brand h1 {
+    font-size: 26px;
+}
+
+.brand p {
+    font-size: 14px;
+    color: #8ecae6;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.navbar a:hover {
+    background: #219ebc;
+}
+
+
+/* ---------- Generic section ---------- */
+
+.section {
+    max-width: 1000px;
+    margin: 30px auto; /* box model: auto margin to center */
+    padding: 20px 30px;
+    background: #fff;
+    border: 1px solid #d9dde1;
+    border-radius: 8px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    border-left: 5px solid #fb8500;
+    padding-left: 10px;
+}
+
+
+/* ---------- About ---------- */
+
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #8ecae6;
+    object-fit: cover;
+}
+
+
+/* ---------- Skills table ---------- */
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 1px solid #d9dde1;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.skills-table thead {
+    background: #ffb703;
+}
+
+.skills-table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+
+/* ---------- Gallery - CSS Grid ---------- */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #e2e6ea;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    background: #fafbfc;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    display: block;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px;
+    font-weight: 600;
+}
+
+
+/* ---------- Contact form ---------- */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px 10px;
+    border: 1px solid #c7cdd3;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.btn-row input {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    background: #219ebc;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-row input[type="reset"] {
+    background: #adb5bd;
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+
+/* ---------- Responsive - media queries ---------- */
+
+@media (max-width: 768px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
